@@ -26,7 +26,7 @@ const Page = async ({searchParams}: PageProps) => {
     })
 
     if (!user) {
-        redirect("/sign-in")
+        return redirect("/welcome") // Si l'utilisateur n'est pas trouvé dans la base de données, il est redirigé vers la page de bienvenue.
     }
     
     const intent = searchParams.intent  
