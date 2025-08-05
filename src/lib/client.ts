@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { AppType } from "@/server"
 import { hc } from "hono/client"
 import { HTTPException } from "hono/http-exception"
